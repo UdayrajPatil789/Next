@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "analyze": "cross-env ANALYZE=true next build"
   },
   "dependencies": {
     "mongodb": "^6.3.0",
@@ -17,7 +18,9 @@
     "react-icons": "^5.0.1"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "eslint": "^8",
-    "eslint-config-next": "14.1.0"
+    "eslint-config-next": "14.1.0",
+    "webpack-bundle-analyzer": "^4.10.1"
   }
 }
