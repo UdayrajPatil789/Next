@@ -8,12 +8,12 @@ if (!MONGODB_URL) {
     )
 }
 
-
+  
 let cached = global.mongoose;
 
 if (!cached) {
     cached = global.mongoose = {con: null, promise: null}
-}
+}""
 
 const dbConnect = async () => {
     if (cached.conn) {
@@ -40,6 +40,6 @@ const dbConnect = async () => {
     }
 
     return cached.conn;
-}
+} 
 
 export default dbConnect;
