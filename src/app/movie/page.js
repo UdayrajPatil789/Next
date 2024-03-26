@@ -2,7 +2,7 @@ import styles from "@/app/styles/common.module.css";
 import React from "react";
 import MovieCard from "../components/MovieCard";
 
-const movie = async () => {
+const Movie = async () => {
   await new Promise((resolve) => setTimeout(resolve, 1000));
 
   const url = process.env.RAPID_KEY;
@@ -35,4 +35,4 @@ const movie = async () => {
   );
 };
 
-export default movie;
+export default Movie;
